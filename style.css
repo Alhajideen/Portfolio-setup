@@ -1,3 +1,24 @@
 * {
   box-sizing: border-box;
 }
+
+.nav-bar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar .nav-logo {
+  padding: 10px;
+}
+
+.nav-bar .hamburger{
+  padding: 10px 0;
+}
+
+.nav-bar .nav-logo p {
+  font-family: inter;
+  font-size: 20px;
+  font-weight: 600;
+}
