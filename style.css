@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.nav-bar .nav-logo {
+  padding: 10px;
+}
+
+.nav-bar .nav-logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-bar .hamburger {
+  padding: 10px 0;
+}
+
+.nav-bar .nav-logo p {
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.jumbo-tron {
+  background-image: url('./img/header-illsutration-mobile.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 648px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.jumbo-tron header {
+  width: 70%;
+  margin: auto;
+  flex: 1;
+  text-align: center;
+  margin-top: 55px;
+}
+
+.jumbo-tron header h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+}
+
+.dark-head {
+  color: #172b4d;
+}
+
+.green-head {
+  color: #36b37e;
+}
+
+.jumbo-tron article {
+  width: 70%;
+  margin: auto auto auto;
+  flex: 1;
+}
+
+.jumbo-tron article h3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.jumbo-tron .socials {
+  margin: -50px auto auto auto;
+}
+
+.pointer {
+  margin: 30px auto auto auto;
+  cursor: pointer;
+}
+
+.pointer img {
+  border: 1px solid gray;
+  border-radius: 60%;
+  padding: 15px;
+}
+
+.jumbo-tron .socials img {
+  margin: 0 5px;
+}
