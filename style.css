@@ -102,13 +102,28 @@
 .my-work {
   width: 100%;
   background-color: white;
-  margin-top: 15px;
+  margin-top: 8rem;
 }
 
 .my-work .work-header {
   width: 70%;
   margin: auto;
   text-align: center;
+}
+
+.about-me header h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.about-categories header h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #344563;
 }
 
 .my-work .work-header h2 {
@@ -152,6 +167,16 @@
   border-radius: 10px;
 }
 
+.about-me header {
+  margin: auto;
+  padding: 0 30px;
+}
+
+.about-categories header {
+  margin: 20px auto;
+  text-align: center;
+}
+
 .work-card .work-text header {
   width: 70%;
   display: flex;
@@ -172,11 +197,44 @@
   margin: 10px 0;
 }
 
+.categories ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
+}
+
+.categories ul li {
+  margin: 20px 0;
+}
+
+.about-categories .tool-list ul {
+  width: 90%;
+  margin: auto;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .my-work .work-text .work-tools ul {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: space-around;
+}
+
+.about-categories .tool-list ul li {
+  background-color: white;
+  color: #36b37e;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 10px;
+  border-radius: 10px;
+  /* margin: 10px 10px; */
 }
 
 .my-work .work-text .work-tools ul li {
@@ -195,6 +253,13 @@
   margin-top: 20px;
 }
 
+.about-me .resume-btn button {
+  padding: 15px;
+  background-color: #36b37e;
+  color: white;
+  border-radius: 5px;
+}
+
 .my-work .work-text .project-btn button {
   font-weight: 500;
   font-size: 17px;
@@ -203,6 +268,10 @@
   color: white;
   padding: 10px;
   border-radius: 5px;
+}
+
+.about-me .resume-btn button:active {
+  background-color: #008552;
 }
 
 .my-work .work-text .project-btn button:active {
@@ -216,18 +285,6 @@
   background-position: top right, bottom left;
   background-repeat: no-repeat;
   padding-top: 10px;
-}
-
-.about-me header {
-  margin: auto;
-  padding: 0 30px;
-}
-
-.about-me header h2 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  color: #172b4d;
 }
 
 .about-me .about-body {
@@ -247,29 +304,11 @@
   margin: 10px auto;
 }
 
-.about-me .resume-btn button {
-  padding: 15px;
-  background-color: #36b37e;
-  color: white;
-  border-radius: 5px;
-}
-
-.about-me .resume-btn button:active {
-  background-color: #008552;
-}
-
-.categories ul {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
-}
-
 .about-categories {
   width: 90%;
   height: 100%;
   border-radius: 10px;
-  margin: 20px auto;
+  margin: 50px auto;
   background-color: #ebf0ee;
   display: flex;
   flex-direction: column;
@@ -285,39 +324,4 @@
   width: 80px;
   height: 80px;
   border-radius: 50px;
-}
-
-.about-categories header {
-  margin: 20px auto;
-  text-align: center;
-}
-
-.about-categories header h2 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  color: #344563;
-}
-
-.about-categories .tool-list ul {
-  width: 90%;
-  margin: auto;
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.about-categories .tool-list ul li {
-  background-color: white;
-  color: #36b37e;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 10px 10px;
 }
