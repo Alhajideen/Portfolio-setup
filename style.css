@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   border: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 .nav-bar {
@@ -16,12 +17,16 @@
   padding: 10px;
 }
 
+.nav-bar .nav-logo a {
+  text-decoration: none;
+  color: black;
+}
+
 .nav-bar .hamburger {
   padding: 10px 0;
 }
 
 .nav-bar .nav-logo p {
-  font-family: 'Inter';
   font-style: normal;
   font-size: 20px;
   font-weight: 600;
@@ -48,15 +53,10 @@
   margin-top: 55px;
 }
 
-.jumbo-tron article {
-  flex: 1;
-}
-
 .jumbo-tron header h1 {
   font-weight: 700;
   font-size: 40px;
   line-height: 55px;
-  font-family: 'Inter';
 }
 
 .dark-head {
@@ -70,10 +70,10 @@
 .jumbo-tron article {
   width: 70%;
   margin: auto auto auto;
+  flex: 1;
 }
 
-.jumbo-tron article p {
-  font-family: 'Inter';
+.jumbo-tron article h3 {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -82,10 +82,6 @@
 
 .jumbo-tron .socials {
   margin: -50px auto auto auto;
-}
-
-.jumbo-tron .socials img {
-  margin: 0 5px;
 }
 
 .pointer {
@@ -97,4 +93,8 @@
   border: 1px solid gray;
   border-radius: 60%;
   padding: 15px;
+}
+
+.jumbo-tron .socials img {
+  margin: 0 5px;
 }
