@@ -125,3 +125,82 @@
   height: 4px;
   width: 48px;
 }
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  height: 474px;
+  width: 90%;
+  margin: 30px auto;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: #ebf0ee;
+}
+
+.work-card .work-img {
+  height: 55%;
+}
+
+.work-card .work-text {
+  height: 45%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.work-card .work-text header {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.work-card .work-text header h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #3a4a42;
+}
+
+.my-work .work-text .work-tools {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.my-work .work-text .work-tools ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.my-work .work-text .work-tools ul li {
+  background-color: #ebf0ee;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.my-work .work-text .project-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.my-work .work-text .project-btn button {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  background-color: #36b37e;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
