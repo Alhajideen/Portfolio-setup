@@ -204,3 +204,120 @@
   padding: 10px;
   border-radius: 5px;
 }
+
+.my-work .work-text .project-btn button:active {
+  background-color: #008552;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  background-image: url('./img/top-right.svg'), url('./img/bottom-left.png');
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+  padding-top: 10px;
+}
+
+.about-me header {
+  margin: auto;
+  padding: 0 30px;
+}
+
+.about-me header h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.about-me .about-body {
+  width: 80%;
+  margin: 10px auto auto auto;
+  text-align: center;
+  color: #42526e;
+}
+
+.about-me .about-body p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.about-me .resume-btn {
+  margin: 10px auto;
+}
+
+.about-me .resume-btn button {
+  padding: 15px;
+  background-color: #36b37e;
+  color: white;
+  border-radius: 5px;
+}
+
+.about-me .resume-btn button:active {
+  background-color: #008552;
+}
+
+.categories ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
+}
+
+.about-categories {
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+  margin: 20px auto;
+  background-color: #ebf0ee;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+}
+
+.about-categories figure {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  margin: 50px auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+
+.about-categories header {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.about-categories header h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #344563;
+}
+
+.about-categories .tool-list ul {
+  width: 90%;
+  margin: auto;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.about-categories .tool-list ul li {
+  background-color: white;
+  color: #36b37e;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 10px;
+}
