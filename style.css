@@ -98,3 +98,30 @@
 .jumbo-tron .socials img {
   margin: 0 5px;
 }
+
+.my-work {
+  width: 100%;
+  background-color: white;
+  margin-top: 15px;
+}
+
+.my-work .work-header {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.my-work .work-header h2 {
+  color: #172b4d;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.my-work .divider {
+  margin: 20px auto;
+  background-color: #36b37e;
+  height: 4px;
+  width: 48px;
+}
