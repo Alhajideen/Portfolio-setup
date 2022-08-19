@@ -46,7 +46,7 @@
 }
 
 .jumbo-tron header {
-  width: 70%;
+  width: 80%;
   margin: auto;
   flex: 1;
   text-align: center;
@@ -55,7 +55,7 @@
 
 .jumbo-tron header h1 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 55px;
 }
 
@@ -86,13 +86,19 @@
 
 .pointer {
   margin: 30px auto auto auto;
-  cursor: pointer;
+}
+
+.pointer .round-point {
+  width: 50px;
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 60%;
+  display: flex;
+  justify-content: center;
 }
 
 .pointer img {
-  border: 1px solid gray;
-  border-radius: 60%;
-  padding: 15px;
+  margin: auto;
 }
 
 .jumbo-tron .socials img {
@@ -234,7 +240,7 @@
   line-height: 16px;
   padding: 10px;
   border-radius: 10px;
-  margin: 10px 10px;
+  margin: 5px 5px;
 }
 
 .my-work .work-text .work-tools ul li {
