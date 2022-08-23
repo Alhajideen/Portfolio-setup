@@ -288,6 +288,11 @@
   background-color: #008552;
 }
 
+.my-work .work-text .project-btn button:hover {
+  background-color: #36b37e;
+  box-shadow: 5px 10px 8px #a6ebbd;
+}
+
 .about-me {
   display: flex;
   flex-direction: column;
@@ -398,6 +403,15 @@
   color: white;
   border-radius: 5px;
   margin: auto;
+}
+
+.contact-form .form-fields .list .btn:active {
+  background-color: #008552;
+}
+
+.contact-form .form-fields .list .btn:hover {
+  background-color: #36b37e;
+  box-shadow: 5px 10px 8px #a6ebbd;
 }
 
 .footer-mobile {
