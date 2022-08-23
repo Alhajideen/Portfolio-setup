@@ -389,11 +389,12 @@
 
 .contact-form .form-fields .list textarea {
   width: 100%;
-  border: 1px solid grey;
+  border: 1px solid green;
   height: 114px;
   margin: 10px 0;
   border-radius: 5px;
   padding: 10px;
+
 }
 
 .contact-form .form-fields .list textarea::placeholder {
