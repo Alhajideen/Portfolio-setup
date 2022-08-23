@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
+    <header class="navigation-bar">
       <nav class="nav-bar">
         <div class="nav-logo">
           <a href="index.html"><p>Welcome</p></a>
@@ -258,5 +258,68 @@
         </li>
       </ul>
     </div>
+    <section class="contact-form">
+      <header class="contact-header">
+        <h2 class="contact-info">
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </h2>
+      </header>
+      <form
+        action="https://formspree.io/f/mjvzkgod"
+        method="post"
+        class="form-fields"
+      >
+        <ul class="list">
+          <li>
+            <input
+              type="text"
+              name="name"
+              class="input-field"
+              placeholder="Full name"
+              maxlength="30"
+              required
+            />
+          </li>
+          <li>
+            <input
+              type="email"
+              name="email"
+              class="input-field"
+              placeholder="Email Address"
+              required
+            />
+          </li>
+          <li>
+            <textarea
+              name="message"
+              cols="30"
+              class="input-field"
+              rows="10"
+              placeholder="Enter text here"
+              maxlength="500"
+              required
+            ></textarea>
+          </li>
+          <li class="submit-btn">
+            <button class="btn" type="submit">Get in touch</button>
+          </li>
+        </ul>
+      </form>
+      <footer class="footer-mobile">
+        <div class="socials">
+          <figure>
+            <a href="#"><img src="./img/twitter.svg" alt="" /></a>
+            <a href="#"><img src="./img/Linkedinicon.svg" alt="" /></a>
+            <a href="#"><img src="./img/medium.svg" alt="" /></a>
+            <a href="#"><img src="./img/github.svg" alt="" /></a>
+            <a href="#"><img src="./img/angellist.svg" alt="" /></a>
+          </figure>
+        </div>
+        <div class="email">
+          <p>devjs.nurudeen@gmail.com</p>
+        </div>
+      </footer>
+    </section>
   </body>
 </html>

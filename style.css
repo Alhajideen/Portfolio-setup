@@ -5,6 +5,12 @@
   font-family: 'Inter', sans-serif;
 }
 
+.navigation-bar {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
 .nav-bar {
   width: 100%;
   display: flex;
@@ -149,7 +155,7 @@
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
 }
 
 .work-card {
@@ -201,6 +207,10 @@
 .my-work .work-text .work-tools {
   width: 100%;
   margin: 10px 0;
+}
+
+.categories {
+  margin-bottom: 70px;
 }
 
 .categories ul {
@@ -280,8 +290,18 @@
   background-color: #008552;
 }
 
+.about-me .resume-btn button:hover {
+  background-color: #36b37e;
+  box-shadow: 5px 10px 8px #a6ebbd;
+}
+
 .my-work .work-text .project-btn button:active {
   background-color: #008552;
+}
+
+.my-work .work-text .project-btn button:hover {
+  background-color: #36b37e;
+  box-shadow: 5px 10px 8px #a6ebbd;
 }
 
 .about-me {
@@ -330,4 +350,100 @@
   width: 80px;
   height: 80px;
   border-radius: 50px;
+}
+
+.contact-form {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  background-image: url('./img/illustration-contact-form.svg');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.contact-form .contact-header {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-form .contact-header .contact-info {
+  color: #172b4d;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+}
+
+.contact-form .form-fields {
+  width: 90%;
+}
+
+.contact-form .form-fields .list {
+  list-style: none;
+}
+
+.contact-form .form-fields .list input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid grey;
+  margin: 10px 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.contact-form .form-fields .list textarea {
+  width: 100%;
+  border: 1px solid green;
+  height: 114px;
+  margin: 10px 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.contact-form .form-fields .list textarea::placeholder {
+  color: black;
+}
+
+.contact-form .form-fields .list .submit-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form .form-fields .list .btn {
+  padding: 15px;
+  background-color: #36b37e;
+  color: white;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.contact-form .form-fields .list .btn:active {
+  background-color: #008552;
+}
+
+.contact-form .form-fields .list .btn:hover {
+  background-color: #36b37e;
+  box-shadow: 5px 10px 8px #a6ebbd;
+}
+
+.footer-mobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.footer-mobile .socials img {
+  width: 40px;
+  padding: 10px;
+}
+
+.footer-mobile .email p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
 }
