@@ -383,6 +383,10 @@
   padding: 10px;
 }
 
+.contact-form .form-fields .list textarea::placeholder {
+  color: black;
+}
+
 .contact-form .form-fields .list .submit-btn {
   display: flex;
   justify-content: center;
@@ -394,4 +398,24 @@
   color: white;
   border-radius: 5px;
   margin: auto;
+}
+
+.footer-mobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.footer-mobile .socials img {
+  width: 40px;
+  padding: 10px;
+}
+
+.footer-mobile .email p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
 }
