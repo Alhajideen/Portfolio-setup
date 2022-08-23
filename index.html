@@ -260,24 +260,41 @@
     </div>
     <section class="contact-form">
       <header class="contact-header">
-        <h2>
+        <h2 class="contact-info">
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </h2>
       </header>
-      <form action="">
-        <ul>
+      <form action="" class="form-fields">
+        <ul class="list">
           <li>
-            <input type="text" name="name" placeholder="Full name" />
+            <input
+              type="text"
+              name="name"
+              class="input-field"
+              placeholder="Full name"
+            />
           </li>
           <li>
-            <input type="text" name="email" placeholder="Email Address" />
+            <input
+              type="text"
+              name="email"
+              class="input-field"
+              placeholder="Email Address"
+            />
           </li>
           <li>
-            <textarea name="message" id="" cols="30" rows="10"></textarea>
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              class="input-field"
+              rows="10"
+              placeholder="Enter text here"
+            ></textarea>
           </li>
-          <li>
-            <button type="submit">Get in touch</button>
+          <li class="submit-btn">
+            <button class="btn" type="submit">Get in touch</button>
           </li>
         </ul>
       </form>
