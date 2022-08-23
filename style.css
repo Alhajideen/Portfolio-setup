@@ -284,6 +284,11 @@
   background-color: #008552;
 }
 
+.about-me .resume-btn button:hover {
+  background-color: #36b37e;
+  box-shadow: 5px 10px 8px #a6ebbd;
+}
+
 .my-work .work-text .project-btn button:active {
   background-color: #008552;
 }
