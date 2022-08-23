@@ -351,6 +351,9 @@
   display: flex;
   flex-wrap: wrap;
   margin: 10px 0;
+  background-image: url('./img/illustration-contact-form.svg');
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
 
 .contact-form .contact-header {
