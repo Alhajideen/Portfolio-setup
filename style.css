@@ -149,7 +149,7 @@
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
 }
 
 .work-card {
@@ -338,6 +338,9 @@
 
 .contact-form {
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
 }
 
 .contact-form .contact-header {
