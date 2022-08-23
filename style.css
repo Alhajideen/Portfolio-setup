@@ -249,6 +249,9 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
+  flex: display;
+  float: right;
+  margin: auto 10px;
 }
 
 .my-work .work-text .project-btn {
@@ -256,6 +259,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  clear: both;
 }
 
 .about-me .resume-btn button {
