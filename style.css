@@ -224,7 +224,7 @@
   flex-wrap: wrap;
 }
 
-.my-work .work-text .work-tools {
+.my-work .work-text .work-tools ul {
   list-style: none;
   padding: 0;
   
