@@ -5,6 +5,12 @@
   font-family: 'Inter', sans-serif;
 }
 
+.navigation-bar {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
 .nav-bar {
   width: 100%;
   display: flex;
@@ -394,7 +400,6 @@
   margin: 10px 0;
   border-radius: 5px;
   padding: 10px;
-
 }
 
 .contact-form .form-fields .list textarea::placeholder {
