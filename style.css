@@ -449,3 +449,137 @@
   line-height: 32px;
 }
 
+@media (max-width: 768px) {
+  .nav-desktop {
+    display: none;
+  }
+  .footer-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .navigation-bar {
+    display: none;
+  }
+
+  .jumbo-tron {
+    display: none;
+  }
+  .nav-desktop {
+    background-image: url('./img/Header-llustration-desktop@2x.png');
+    background-repeat: no-repeat;
+    background-size: 110%;
+    padding-bottom: 10rem;
+  }
+
+  .nav-desktop .navigation-desktop ul {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .nav-desktop .navigation-desktop ul a {
+    text-decoration: none;
+    color: #172b4d;
+  }
+
+  .nav-desktop .navigation-desktop ul li {
+    margin: 0 10px;
+    padding: 0;
+    font-weight: 700px;
+    font-size: 20px;
+  }
+
+  .nav-desktop .jumbo-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    width: 60%;
+    margin: auto;
+    padding-top: 10rem;
+    text-align: center;
+  }
+
+  .nav-desktop .jumbo-desktop h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .nav-desktop .paragraph {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .nav-desktop .paragraph h3 {
+    font-weight: 400;
+    font-size: 21.3px;
+    line-height: 28px;
+  }
+
+  .nav-desktop .bottom .socials {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav-desktop .bottom .socials img {
+    margin: 0 10px;
+  }
+
+  .nav-desktop .bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact-form {
+    background-image: url('./img/contact\ form-illustratoin-3-desktop.svg'),
+      url('./img/Frame@2x.png');
+    background-position: bottom right, bottom left;
+    background-repeat: no-repeat;
+    background-size: 10%;
+  }
+
+  .contact-form .desktop-flex {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .contact-form .desktop-flex .contact-header .contact-info {
+    text-align: left;
+  }
+
+  .contact-form h2 {
+    font-weight: 700 !important;
+    font-size: 30px !important;
+    line-height: 52px !important;
+  }
+
+  .contact-form .footer-mobile {
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact-form .footer-mobile .email {
+    display: none;
+  }
+
+  .contact-form .footer-mobile .socials {
+    display: none !important;
+  }
+}

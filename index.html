@@ -22,12 +22,12 @@
         </div>
       </nav>
     </header>
-        <header class="nav-desktop">
+    <header class="nav-desktop">
       <nav class="navigation-desktop">
         <ul>
-          <li>Portfolio</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <section class="jumbo-desktop">
@@ -219,7 +219,7 @@
         </article>
       </div>
     </section>
-    <section class="about-me">
+    <section class="about-me" id="about">
       <header>
         <h2>About me</h2>
       </header>
@@ -294,54 +294,56 @@
         </li>
       </ul>
     </div>
-    <section class="contact-form">
-      <header class="contact-header">
-        <h2 class="contact-info">
-          I'm always interested in hearing about new projects, so if you'd like
-          to chat please get in touch.
-        </h2>
-      </header>
-      <form
-        action="https://formspree.io/f/mjvzkgod"
-        method="post"
-        class="form-fields"
-      >
-        <ul class="list">
-          <li>
-            <input
-              type="text"
-              name="name"
-              class="input-field"
-              placeholder="Full name"
-              maxlength="30"
-              required
-            />
-          </li>
-          <li>
-            <input
-              type="email"
-              name="email"
-              class="input-field"
-              placeholder="Email Address"
-              required
-            />
-          </li>
-          <li>
-            <textarea
-              name="message"
-              cols="30"
-              class="input-field"
-              rows="10"
-              placeholder="Enter text here"
-              maxlength="500"
-              required
-            ></textarea>
-          </li>
-          <li class="submit-btn">
-            <button class="btn" type="submit">Get in touch</button>
-          </li>
-        </ul>
-      </form>
+    <section class="contact-form" id="contact">
+      <div class="desktop-flex">
+        <header class="contact-header">
+          <h2 class="contact-info">
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </h2>
+        </header>
+        <form
+          action="https://formspree.io/f/mjvzkgod"
+          method="post"
+          class="form-fields"
+        >
+          <ul class="list">
+            <li>
+              <input
+                type="text"
+                name="name"
+                class="input-field"
+                placeholder="Full name"
+                maxlength="30"
+                required
+              />
+            </li>
+            <li>
+              <input
+                type="email"
+                name="email"
+                class="input-field"
+                placeholder="Email Address"
+                required
+              />
+            </li>
+            <li>
+              <textarea
+                name="message"
+                cols="30"
+                class="input-field"
+                rows="10"
+                placeholder="Enter text here"
+                maxlength="500"
+                required
+              ></textarea>
+            </li>
+            <li class="submit-btn">
+              <button class="btn" type="submit">Get in touch</button>
+            </li>
+          </ul>
+        </form>
+      </div>
       <footer class="footer-mobile">
         <div class="socials">
           <figure>
@@ -357,5 +359,12 @@
         </div>
       </footer>
     </section>
+    <figure class="footer-desktop">
+      <a href="#"><img src="./img/twitter.svg" alt="" /></a>
+      <a href="#"><img src="./img/Linkedinicon.svg" alt="" /></a>
+      <a href="#"><img src="./img/medium.svg" alt="" /></a>
+      <a href="#"><img src="./img/github.svg" alt="" /></a>
+      <a href="#"><img src="./img/angellist.svg" alt="" /></a>
+    </figure>
   </body>
 </html>
