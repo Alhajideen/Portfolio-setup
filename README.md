@@ -2,6 +2,9 @@
 
 > A simple html/css project that has html-css linters installed.
 
+## Live link
+https://alhajideen.github.io/Portfolio-setup/
+
 ## Built With
 
 - HTML.
@@ -17,9 +20,9 @@
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+👤 **Contributor 1**
 
-Feel free to check the [issues page](../../issues/).
+-Github: https://github.com/Duncannjau
 
 ## 📝 License
 
