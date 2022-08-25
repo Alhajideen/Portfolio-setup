@@ -239,7 +239,7 @@
   padding: 0;
   display: flex;
   flex-basis: content;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .about-categories .tool-list ul li {
