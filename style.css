@@ -540,6 +540,15 @@
     justify-content: space-around;
   }
 
+  .footer-desktop img {
+    transition: transform 1s;
+  }
+
+  .footer-desktop img:hover,
+  .footer-desktop img:focus {
+    transform: scale(120%);
+  }
+
   .nav-desktop .bottom .socials img {
     margin: 0 10px;
   }
@@ -610,17 +619,9 @@
     from {
       transform: rotate(0deg);
     }
+
     to {
       transform: rotate(360deg);
     }
-  }
-
-  .footer-desktop img {
-    transition: transform 1s;
-  }
-
-  .footer-desktop img:hover,
-  .footer-desktop img:focus {
-    transform: scale(120%);
   }
 }
