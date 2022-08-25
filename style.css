@@ -236,7 +236,7 @@
 
 .my-work .work-text .work-tools ul {
   list-style: none;
-  padding: 0;
+  padding: 0 15px;
   display: flex;
   flex-basis: content;
   justify-content: space-around;
