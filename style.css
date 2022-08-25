@@ -472,7 +472,7 @@
     background-image: url('./img/Header-llustration-desktop@2x.png');
     background-repeat: no-repeat;
     background-size: 110%;
-    height: 600px;
+    height: 100vh;
     padding-bottom: 10rem;
   }
 
