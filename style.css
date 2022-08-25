@@ -598,4 +598,17 @@
   .footer-desktop .footer-img {
     margin: 10px 0;
   }
+
+  .nav-desktop .navigation-desktop .animation {
+    animation: rotation 2s 2 ease;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
