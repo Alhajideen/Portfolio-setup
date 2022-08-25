@@ -272,6 +272,7 @@
 
 .about-me .resume-btn button {
   padding: 15px;
+  transition: box-shadow 2s;
   background-color: #36b37e;
   color: white;
   border-radius: 5px;
@@ -280,6 +281,7 @@
 .my-work .work-text .project-btn button {
   font-weight: 500;
   font-size: 17px;
+  transition: box-shadow 2s;
   line-height: 24px;
   background-color: #36b37e;
   color: white;
@@ -414,6 +416,7 @@
 
 .contact-form .form-fields .list .btn {
   padding: 15px;
+  transition: box-shadow 2s;
   background-color: #36b37e;
   color: white;
   border-radius: 5px;
@@ -537,6 +540,15 @@
     justify-content: space-around;
   }
 
+  .footer-desktop img {
+    transition: transform 1s;
+  }
+
+  .footer-desktop img:hover,
+  .footer-desktop img:focus {
+    transform: scale(120%);
+  }
+
   .nav-desktop .bottom .socials img {
     margin: 0 10px;
   }
@@ -597,5 +609,19 @@
 
   .footer-desktop .footer-img {
     margin: 10px 0;
+  }
+
+  .nav-desktop .navigation-desktop .animation {
+    animation: rotation 2s 2 ease;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
   }
 }
