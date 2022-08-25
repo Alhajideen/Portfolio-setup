@@ -416,6 +416,7 @@
 
 .contact-form .form-fields .list .btn {
   padding: 15px;
+  transition: box-shadow 2s;
   background-color: #36b37e;
   color: white;
   border-radius: 5px;
