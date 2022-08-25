@@ -280,6 +280,7 @@
 .my-work .work-text .project-btn button {
   font-weight: 500;
   font-size: 17px;
+  transition: box-shadow 2s;
   line-height: 24px;
   background-color: #36b37e;
   color: white;
