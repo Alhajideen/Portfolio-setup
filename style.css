@@ -523,6 +523,12 @@
     margin-top: 30px;
   }
 
+  .contact-form h2 {
+    font-weight: 700 !important;
+    font-size: 30px !important;
+    line-height: 52px !important;
+  }
+
   .nav-desktop .paragraph h2 {
     font-weight: 400;
     font-size: 21.3px;
@@ -572,12 +578,6 @@
 
   .contact-form .desktop-flex .contact-header .contact-info {
     text-align: left;
-  }
-
-  .contact-form h2 {
-    font-weight: 700 !important;
-    font-size: 30px !important;
-    line-height: 52px !important;
   }
 
   .contact-form .footer-mobile {
