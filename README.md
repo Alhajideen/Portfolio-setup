@@ -3,7 +3,8 @@
 > A simple html/css project that has html-css linters installed.
 
 ## Live link
-https://alhajideen.github.io/Portfolio-setup/
+
+[View Live Link] (https://alhajideen.github.io/Portfolio-setup/)
 
 ## Built With
 
