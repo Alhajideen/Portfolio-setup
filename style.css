@@ -409,11 +409,6 @@
   color: black;
 }
 
-.contact-form .form-fields .list .submit-btn {
-  display: flex;
-  justify-content: center;
-}
-
 .contact-form .form-fields .list .btn {
   padding: 15px;
   transition: box-shadow 2s;
@@ -421,6 +416,7 @@
   color: white;
   border-radius: 5px;
   margin: auto;
+  align-self: flex-start !important;
 }
 
 .contact-form .form-fields .list .btn:active {
@@ -527,7 +523,7 @@
     margin-top: 30px;
   }
 
-  .nav-desktop .paragraph h3 {
+  .nav-desktop .paragraph h2 {
     font-weight: 400;
     font-size: 21.3px;
     line-height: 28px;
