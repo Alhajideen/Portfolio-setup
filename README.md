@@ -10,6 +10,7 @@
 
 - HTML.
 - CSS.
+  -Javascript
 
 ## Authors
 
@@ -24,6 +25,10 @@
 👤 **Contributor 1**
 
 -Github: https://github.com/Duncannjau
+
+👤 **Contributor 2**
+
+-Github: https://github.com/jfoyarzo
 
 ## 📝 License
 
