@@ -36,6 +36,7 @@
 
 .nav-bar .hamburger {
   padding: 10px 0;
+  cursor: pointer;
 }
 
 .nav-bar .nav-logo p {
@@ -61,6 +62,7 @@
 
 .close-x {
   display: none;
+  cursor: pointer;
 }
 
 .hidden {
