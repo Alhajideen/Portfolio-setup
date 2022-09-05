@@ -41,6 +41,11 @@
 
 .mobile-dropdown {
   display: none;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
 }
 
 .close-x {
@@ -48,11 +53,53 @@
 }
 
 .hidden {
-  display: none !important;
+  display: none;
 }
 
 .visible {
-  display: block !important;
+  display: block;
+  animation: dropdown 1s 1;
+}
+
+.noVisibility {
+  visibility: hidden;
+}
+
+.mobile-dropdown {
+  list-style: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  align-items: left;
+}
+
+@keyframes dropdown {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+.mobile-dropdown li {
+  margin: 15px 0;
+}
+
+.mobile-dropdown a {
+  text-decoration: none;
+  color: black;
+  animation: coloring 3s 1;
+}
+
+@keyframes coloring {
+  from {
+    color: white;
+  }
+  to {
+    color: black;
+  }
 }
 
 .jumbo-tron {
