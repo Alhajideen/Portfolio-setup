@@ -1,10 +1,10 @@
-let hamburger = document.querySelector('.hamburger');
-let dropdown = document.querySelector('.mobile-dropdown');
-let closeX = document.querySelector('.close-x');
-let navigation = document.querySelector('.nav-logo');
-let menulink = document.querySelectorAll('.menulink');
+const hamburger = document.querySelector('.hamburger');
+const dropdown = document.querySelector('.mobile-dropdown');
+const closeX = document.querySelector('.close-x');
+const navigation = document.querySelector('.nav-logo');
+const menulink = document.querySelectorAll('.menulink');
 
-let buttonArr = [hamburger, closeX];
+const buttonArr = [hamburger, closeX];
 buttonArr.forEach((e) => {
   e.addEventListener('click', () => {
     hamburger.classList.toggle('hidden');
