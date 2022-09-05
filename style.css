@@ -39,6 +39,10 @@
   line-height: 28px;
 }
 
+.mobile-dropdown {
+  display: none;
+}
+
 .jumbo-tron {
   background-image: url('./img/header-illsutration-mobile.png');
   background-size: 100% 100%;
