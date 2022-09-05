@@ -48,11 +48,11 @@
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .visible {
-  display: block;
+  display: block !important;
 }
 
 .jumbo-tron {
