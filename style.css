@@ -47,6 +47,14 @@
   display: none;
 }
 
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 .jumbo-tron {
   background-image: url('./img/header-illsutration-mobile.png');
   background-size: 100% 100%;
