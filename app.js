@@ -88,8 +88,7 @@ menulink.forEach((e) => {
 });
 
 // Loop array and display cards to dom
-
-function display() {
+const display=()=> {
   let myCard = '';
   for (let i = 0; i < projectArr.length; i++) {
     let myObj = projectArr[i];
@@ -115,7 +114,7 @@ function display() {
               </ul>
             </div>
             <div class="project-btn">
-              <button type="button">See Project</button>
+              <button type="button" class='work-btn' ownIndex=${i}>See Project</button>
             </div>
           </div>
         </article>`;
@@ -124,3 +123,7 @@ function display() {
 }
 display();
 // Loop array and display cards to dom
+
+const showModal =()=>{
+
+}

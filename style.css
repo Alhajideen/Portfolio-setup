@@ -302,11 +302,8 @@
   padding: 0 15px;
   display: flex;
   flex-basis: content;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 5px;
+  gap: 2px;
   justify-content: space-around;
-  
 }
 
 .about-categories .tool-list ul li {
@@ -530,6 +527,12 @@
 
   .footer-desktop {
     display: none;
+  }
+}
+
+@media (min-width: 1023px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
