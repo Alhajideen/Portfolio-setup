@@ -302,7 +302,11 @@
   padding: 0 15px;
   display: flex;
   flex-basis: content;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
   justify-content: space-around;
+  
 }
 
 .about-categories .tool-list ul li {
