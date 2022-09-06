@@ -717,7 +717,21 @@
     width: 100%;
   }
 
-  
+  .modal-title .heading {
+    color: #172b4d;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .modal-btns button {
+    padding: 15px;
+    transition: box-shadow 2s;
+    background-color: #36b37e;
+    color: white;
+    border-radius: 5px;
+  }
+
 
   @keyframes rotation {
     from {
