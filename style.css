@@ -698,8 +698,17 @@
   }
 
   .modal-body {
-    
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    background-color: #fff;
+    margin: auto;
+    padding: 2%;
+    z-index: 2;
   }
+
+  
 
   @keyframes rotation {
     from {
