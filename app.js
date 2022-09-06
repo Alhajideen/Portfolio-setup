@@ -88,19 +88,17 @@ menulink.forEach((e) => {
 });
 
 // Loop array and display cards to dom
-const display=()=> {
-  let myCard = '';
-  for (let i = 0; i < projectArr.length; i++) {
-    let myObj = projectArr[i];
-    let techArr = projectArr[i].technologies;
-    let uList = '';
-    for (let j = 0; j < techArr.length; j++) {
-      console.log(techArr[j]);
-      uList += `
+let myCard = '';
+for (let i = 0; i < projectArr.length; i++) {
+  let myObj = projectArr[i];
+  let techArr = projectArr[i].technologies;
+  let uList = '';
+  for (let j = 0; j < techArr.length; j++) {
+    uList += `
                 <li>${techArr[j]}</li>
               `;
-    }
-    myCard += `<article class="work-card">
+  }
+  myCard += `<article class="work-card">
           <figure class="work-img">
             <img src="${myObj.imae}" alt="work screenshot" />
           </figure>
@@ -118,12 +116,27 @@ const display=()=> {
             </div>
           </div>
         </article>`;
-  }
-  cardContainer.innerHTML = myCard;
 }
-display();
+cardContainer.innerHTML = myCard;
+
 // Loop array and display cards to dom
 
-const showModal =()=>{
+const showModal = () => {
+  const btn = document.querySelectorAll('.work-btn');
+  btn.forEach((e) => {
+    e.addEventListener('click', () => {
+      let index = e.getAttribute('ownIndex');
 
+      // Create html elements
+      const body = document.querySelector('body');
+      const modalContainer = document.createElement('section');
+    });
+  });
+};
+showModal();
+
+const modalElem =()=>{
+return `
+
+`
 }
