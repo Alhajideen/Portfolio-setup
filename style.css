@@ -704,8 +704,17 @@
     height: auto;
     background-color: #fff;
     margin: auto;
-    padding: 2%;
+    padding: 2% 1%;
     z-index: 2;
+  }
+
+  .modal-img {
+    align-self: center;
+    width: 95%;
+  }
+
+  .img-file {
+    width: 100%;
   }
 
   
