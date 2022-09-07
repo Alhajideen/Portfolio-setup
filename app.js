@@ -123,20 +123,120 @@ cardContainer.innerHTML = myCard;
 
 const showModal = () => {
   const btn = document.querySelectorAll('.work-btn');
+  const modalContainer = document.createElement('section');
+  modalContainer.className = 'modal-container';
+  const modalMobile = document.createElement('section');
+  modalMobile.className = 'modal-container-mobile';
   btn.forEach((e) => {
     e.addEventListener('click', () => {
       let index = e.getAttribute('ownIndex');
-
-      // Create html elements
+      let forLaptop = '';
+      let forMobile = '';
+      for (let i = 0; i < projectArr.length; i++) {
+        if (i == index) {
+          forLaptop = modalElem(projectArr[i]);
+          forMobile = modalMob(projectArr[i]);
+        }
+      }
       const body = document.querySelector('body');
-      const modalContainer = document.createElement('section');
+      body.append(modalContainer);
+      body.append(modalMobile);
+      const modalContain = document.querySelector('.modal-container');
+      const mobileContain = document.querySelector('.modal-container-mobile');
+      mobileContain.innerHTML = forMobile;
+      modalContain.innerHTML = forLaptop;
+      const closeModal = document.querySelectorAll('.close-modal');
+
+      closeModal.forEach((e) => {
+        e.addEventListener('click', () => {
+
+        });
+      });
     });
   });
 };
 showModal();
 
-const modalElem =()=>{
-return `
+const modalElem = (arr) => {
+  return `
+ <div class="modal-body">
+        <figure class="close-img">
+          <img class="close-modal" src="./img/close-x.png" alt="" />
+        </figure>
+        <figure class="modal-img">
+          <img class="img-file" src="./img/card1.png" alt="" />
+        </figure>
+        <div class="modal-tittle">
+          <div class="heading">
+            <h2>${arr.name}</h2>
+          </div>
+          <div class="modal-btns">
+            <button>See Live <i class="fa-sharp fa-solid fa-arrow-up-left-from-circle fa-xl"></i></button>
+            <button>See Source</button>
+          </div>
+        </div>
+        <div class="technologies">
+          <ul>
+            <li>Codekit</li>
+            <li>GitHub</li>
+            <li>Javascript</li>
+            <li>Bootstrap</li>
+            <li>Terminal</li>
+            <li>Codepen</li>
+          </ul>
+        </div>
+        <div class="desc">
+          <p>
+            ${arr.description}
+          </p>
+        </div>
+      </div>
+`;
+};
 
-`
-}
+const modalMob = (arr) => {
+  return `
+  <div class="modal-body">
+        <figure class="close-img">
+          <img class="close-modal" src="./img/close-x.png" alt="" />
+        </figure>
+        <figure class="modal-img">
+          <img class="img-file" src="./img/card1.png" alt="" />
+        </figure>
+        <div class="modal-tittle">
+          <div class="heading">
+            <h2>${arr.name}</h2>
+          </div>
+        </div>
+        <div class="technologies">
+          <ul>
+            <li>Codekit</li>
+            <li>GitHub</li>
+            <li>Javascript</li>
+            <li>Bootstrap</li>
+            <li>Terminal</li>
+            <li>Codepen</li>
+          </ul>
+        </div>
+        <div class="desc">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it 1960s with the releaLorem Ipsum is simply dummy
+            text of the printing and typesetting industry. Lorem Ipsum has been
+            the industry's standard dummy text ever since the 1500s, when an
+            unknown printer took a galley of type and scrambled it 1960s with
+            the relea
+          </p>
+        </div>
+        <div class="modal-btns">
+          <button>
+            See Live
+            <i class="fa-sharp fa-solid fa-arrow-up-left-from-circle fa-xl"></i>
+          </button>
+          <button>See Source</button>
+        </div>
+      </div>
+  `;
+};
