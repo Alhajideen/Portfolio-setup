@@ -6,7 +6,7 @@ const menulink = document.querySelectorAll('.menulink');
 const cardContainer = document.querySelector('.card-container');
 const form = document.querySelector('.form-fields');
 const button = document.querySelector('#submitBtn');
-let message = document.querySelector('.errorMsg');
+const message = document.querySelector('.errorMsg');
 
 const projectArr = [
   {
@@ -76,13 +76,11 @@ button.addEventListener('click', (e) => {
   const emailInput = document.querySelector('#email');
   const email = emailInput.value;
   if (email.match(regEx)) {
-    console.log('success');
     message.innerHTML = '';
     form.submit();
   } else {
     e.preventDefault();
-    message.innerHTML =
-      'Please enter correct email pattern in lowercase letters only';
+    message.innerHTML = 'Please enter correct email pattern in lowercase letters only';
   }
 });
 

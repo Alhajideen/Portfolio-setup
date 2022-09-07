@@ -924,6 +924,7 @@
   .errorMsg {
     font-size: 20px;
   }
+
   @keyframes rotation {
     from {
       transform: rotate(0deg);
