@@ -239,7 +239,7 @@
 .work-card {
   display: flex;
   flex-direction: column;
-  height: 474px;
+  height: 520px;
   width: 90%;
   margin: 30px auto;
   border: 1px solid gray;
@@ -328,7 +328,8 @@
   padding: 0 15px;
   display: flex;
   flex-basis: content;
-  gap: 2px;
+  flex-wrap: wrap;
+  gap: 5px;
   justify-content: space-around;
 }
 
@@ -670,7 +671,8 @@
   .nav-desktop {
     background-image: url('./img/Header-llustration-desktop@2x.png');
     background-repeat: no-repeat;
-    background-size: 110%;
+    background-size: cover;
+    background-position: center center;
     height: 100vh;
     padding-bottom: 10rem;
   }
