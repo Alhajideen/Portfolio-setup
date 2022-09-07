@@ -215,3 +215,13 @@ const modalMob = (arr) => `
         </div>
       </div>
   `;
+
+  const form = document.getElementsByClassName('form-fields')
+  const emailInput = form.elements['email']
+  const email = emailInput.value
+
+  form.addEventListener('submit', ()=> {
+    const regEx = /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/
+    
+
+  })
