@@ -216,17 +216,21 @@ const modalMob = (arr) => `
       </div>
   `;
 
-  const form = document.getElementsByClassName('form-fields');
-  const emailInput = form.elements['email'];
-  const email = emailInput.value;
-
-  form.addEventListener('submit', (e)=> {
+  const form = document.querySelector('.form-fields');
+  const button = document.querySelector('#submitBtn')
+  
+  button.addEventListener('click', (e)=> {
+    const emailInput = document.querySelector('#email');
+    const email = emailInput.value;
     const regEx = /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
+    console.log(email)
+    console.log(regEx.test(email))
     if(email.match(regEx)){
-      form.submit();
+      console.log('success');
+      form.submit()
     }else{
       e.preventDefault();
-      let message = document.getElementsByClassName('errorMsg')
+      let message = document.querySelector('.errorMsg')
       message.innerHTML = 'Please enter your email adress using lowercase letters only'
 
     }
