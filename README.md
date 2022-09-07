@@ -1,6 +1,14 @@
 # Portfolio Setup
 
-> A simple html/css project that has html-css linters installed.
+> A simple portfolio website built to showcase my projects and also has a simple form to receive feedback. Below are the sections contained in this project;
+- Navigation bar
+- Headline section
+- Projects
+- About me
+- Technologies and
+- Contact section
+The layout was done using css flexbox and grid.
+The site is responsive across all screen sizes and javascript was used for functionality to enhance user experience.
 
 ## Live link
 
@@ -10,7 +18,7 @@
 
 - HTML.
 - CSS.
-  -Javascript
+- JavaScript.
 
 ## Authors
 
