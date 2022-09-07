@@ -139,18 +139,24 @@ const showModal = () => {
         }
       }
       const body = document.querySelector('body');
-      body.append(modalContainer);
-      body.append(modalMobile);
+
+      const mediaQuery = window.matchMedia('(min-width: 768px)');
+
+      // Check if the media query is true
+      if (mediaQuery.matches) {
+        body.append(modalContainer);
+      } else {
+        body.append(modalMobile);
+      }
       const modalContain = document.querySelector('.modal-container');
       const mobileContain = document.querySelector('.modal-container-mobile');
       mobileContain.innerHTML = forMobile;
       modalContain.innerHTML = forLaptop;
       const closeModal = document.querySelectorAll('.close-modal');
+      mobileContain.classList.toggle('hidden');
 
       closeModal.forEach((e) => {
-        e.addEventListener('click', () => {
-
-        });
+        e.addEventListener('click', () => {});
       });
     });
   });
