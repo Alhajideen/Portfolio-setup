@@ -4,6 +4,9 @@ const closeX = document.querySelector('.close-x');
 const navigation = document.querySelector('.nav-logo');
 const menulink = document.querySelectorAll('.menulink');
 const cardContainer = document.querySelector('.card-container');
+const form = document.querySelector('.form-fields');
+const button = document.querySelector('#submitBtn');
+const message = document.querySelector('.errorMsg');
 
 const projectArr = [
   {
@@ -22,7 +25,7 @@ const projectArr = [
     description:
       "2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     image: './img/card1.png',
-    technologies: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML', 'Deen'],
+    technologies: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
     Source: 'https://github.com/Alhajideen/Portfolio-setup',
     liveLink: 'https://github.com/Alhajideen/Portfolio-setup',
   },
@@ -67,6 +70,19 @@ const projectArr = [
     liveLink: 'https://github.com/Alhajideen/Portfolio-setup',
   },
 ];
+
+button.addEventListener('click', (e) => {
+  const regEx = /^([a-z0-9_\-.]+)@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/;
+  const emailInput = document.querySelector('#email');
+  const email = emailInput.value;
+  if (email.match(regEx)) {
+    message.innerHTML = '';
+    form.submit();
+  } else {
+    e.preventDefault();
+    message.innerHTML = 'Please enter correct email pattern in lowercase letters only';
+  }
+});
 
 const buttonArr = [hamburger, closeX];
 buttonArr.forEach((e) => {

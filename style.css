@@ -239,7 +239,7 @@
 .work-card {
   display: flex;
   flex-direction: column;
-  height: 474px;
+  height: 520px;
   width: 90%;
   margin: 30px auto;
   border: 1px solid gray;
@@ -328,7 +328,8 @@
   padding: 0 15px;
   display: flex;
   flex-basis: content;
-  gap: 2px;
+  flex-wrap: wrap;
+  gap: 5px;
   justify-content: space-around;
 }
 
@@ -575,8 +576,6 @@
 }
 
 .modal-container-mobile {
-  /* display: flex;
-  flex-direction: column; */
   align-items: center;
   position: fixed;
   z-index: 100;
@@ -634,6 +633,12 @@
   width: 48%;
 }
 
+.errorMsg {
+  font-size: 15px;
+  color: red;
+  padding-bottom: 10px;
+}
+
 @media (max-width: 767px) {
   .nav-desktop {
     display: none;
@@ -666,7 +671,8 @@
   .nav-desktop {
     background-image: url('./img/Header-llustration-desktop@2x.png');
     background-repeat: no-repeat;
-    background-size: 110%;
+    background-size: cover;
+    background-position: center center;
     height: 100vh;
     padding-bottom: 10rem;
   }
@@ -913,6 +919,10 @@
     font-size: 14px;
     line-height: 0.5cm;
     margin: 10px auto;
+  }
+
+  .errorMsg {
+    font-size: 20px;
   }
 
   @keyframes rotation {
