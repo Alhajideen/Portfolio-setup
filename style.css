@@ -595,11 +595,13 @@
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .modal-container-mobile .modal-body {
   width: 95%;
-  margin: auto;
+  margin: 3% auto;
   display: flex;
   flex-direction: column;
   height: 95%;
@@ -610,12 +612,6 @@
   padding: 10px 10px;
 }
 
-.modal-container-mobile .modal-body .modal-img {
-  width: 98%;
-  height: 30%;
-  margin: auto;
-}
-
 .modal-container-mobile .modal-btns img {
   padding-top: 3px;
   padding-left: 5px;
@@ -624,6 +620,7 @@
 
 .modal-container-mobile .modal-body .modal-img img {
   width: 100%;
+  height: 100%;
 }
 
 .modal-container-mobile .modal-btns {
