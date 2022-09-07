@@ -22,7 +22,7 @@ const projectArr = [
     description:
       "2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     image: './img/card1.png',
-    technologies: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
+    technologies: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML', 'Deen'],
     Source: 'https://github.com/Alhajideen/Portfolio-setup',
     liveLink: 'https://github.com/Alhajideen/Portfolio-setup',
   },
@@ -30,7 +30,7 @@ const projectArr = [
     id: 3,
     name: 'Multi-Post Stories Gain+Glory',
     description:
-      "2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      "3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     image: './img/card1.png',
     technologies: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
     Source: 'https://github.com/Alhajideen/Portfolio-setup',
@@ -87,13 +87,13 @@ menulink.forEach((e) => {
   };
 });
 
-// Loop array and display cards to dom
 let myCard = '';
-for (let i = 0; i < projectArr.length; i++) {
-  let myObj = projectArr[i];
-  let techArr = projectArr[i].technologies;
-  let uList = '';
-  for (let j = 0; j < techArr.length; j++) {
+let uList = '';
+for (let i = 0; i < projectArr.length; i += 1) {
+  uList = '';
+  const myObj = projectArr[i];
+  const techArr = projectArr[i].technologies;
+  for (let j = 0; j < techArr.length; j += 1) {
     uList += `
                 <li>${techArr[j]}</li>
               `;
@@ -119,8 +119,6 @@ for (let i = 0; i < projectArr.length; i++) {
 }
 cardContainer.innerHTML = myCard;
 
-// Loop array and display cards to dom
-
 const showModal = () => {
   const btn = document.querySelectorAll('.work-btn');
   const modalContainer = document.createElement('section');
@@ -129,17 +127,10 @@ const showModal = () => {
   modalMobile.className = 'modal-container-mobile';
   btn.forEach((e) => {
     e.addEventListener('click', () => {
-      let index = e.getAttribute('ownIndex');
-      let forLaptop = '';
-      let forMobile = '';
-      for (let i = 0; i < projectArr.length; i++) {
-        if (i == index) {
-          forLaptop = modalElem(projectArr[i]);
-          forMobile = modalMob(projectArr[i]);
-        }
-      }
+      const index = e.getAttribute('ownIndex');
+      const forLaptop = modalElem(projectArr[index]);
+      const forMobile = modalMob(projectArr[index]);
       const body = document.querySelector('body');
-
       body.append(modalContainer);
       body.append(modalMobile);
       const modalContain = document.querySelector('.modal-container');
@@ -149,8 +140,6 @@ const showModal = () => {
       const closeModal = document.querySelectorAll('.close-modal');
       closeModal.forEach((e) => {
         e.addEventListener('click', () => {
-          console.log('hi');
-
           modalMobile.remove();
           modalContain.remove();
         });
@@ -160,8 +149,7 @@ const showModal = () => {
 };
 showModal();
 
-const modalElem = (arr) => {
-  return `
+const modalElem = (arr) => `
  <div class="modal-body">
         <figure class="close-img">
           <img class="close-modal" src="./img/close-x.png" alt="" />
@@ -174,18 +162,13 @@ const modalElem = (arr) => {
             <h2>${arr.name}</h2>
           </div>
           <div class="modal-btns">
-            <button>See Live <i class="fa-sharp fa-solid fa-arrow-up-left-from-circle fa-xl"></i></button>
-            <button>See Source</button>
+            <a href="" target="_blank"><button>See Live <img src="./img/see-live.png" alt=""></i></button></a>
+            <a href="" target="_blank"><button>See Source <img src="./img/gh.png" alt="github"></button></a>
           </div>
         </div>
         <div class="technologies">
           <ul>
-            <li>Codekit</li>
-            <li>GitHub</li>
-            <li>Javascript</li>
-            <li>Bootstrap</li>
-            <li>Terminal</li>
-            <li>Codepen</li>
+          ${uList}
           </ul>
         </div>
         <div class="desc">
@@ -195,10 +178,8 @@ const modalElem = (arr) => {
         </div>
       </div>
 `;
-};
 
-const modalMob = (arr) => {
-  return `
+const modalMob = (arr) => `
   <div class="modal-body">
         <figure class="close-img">
           <img class="close-modal" src="./img/close-x.png" alt="" />
@@ -213,12 +194,7 @@ const modalMob = (arr) => {
         </div>
         <div class="technologies">
           <ul>
-            <li>Codekit</li>
-            <li>GitHub</li>
-            <li>Javascript</li>
-            <li>Bootstrap</li>
-            <li>Terminal</li>
-            <li>Codepen</li>
+          ${uList}
           </ul>
         </div>
         <div class="desc">
@@ -234,12 +210,8 @@ const modalMob = (arr) => {
           </p>
         </div>
         <div class="modal-btns">
-          <button>
-            See Live
-            <i class="fa-sharp fa-solid fa-arrow-up-left-from-circle fa-xl"></i>
-          </button>
-          <button>See Source</button>
+            <a href="" target="_blank"><button>See Live <img src="./img/see-live.png" alt=""></i></button></a>
+            <a href="" target="_blank"><button>See Source <img src="./img/gh.png" alt="github"></button></a>
         </div>
       </div>
   `;
-};

@@ -23,6 +23,11 @@
   padding: 10px 30px;
 }
 
+.modal-container-mobile p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .nav-bar .nav-logo {
   padding: 10px;
 }
@@ -70,7 +75,7 @@
 }
 
 .hidden {
-  display: none ;
+  display: none;
 }
 
 .visible {
@@ -190,6 +195,12 @@
   text-align: center;
 }
 
+.modal-container-mobile h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+}
+
 .about-me header h2 {
   font-weight: 700;
   font-size: 40px;
@@ -301,6 +312,17 @@
   flex-wrap: wrap;
 }
 
+.modal-container-mobile .technologies ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start;
+  list-style-type: none;
+  align-items: center;
+}
+
 .my-work .work-text .work-tools ul {
   list-style: none;
   padding: 0 15px;
@@ -322,6 +344,16 @@
   margin: 5px 5px;
 }
 
+.modal-container-mobile .technologies ul li {
+  background-color: #ebecf0;
+  color: #344563;
+  padding: 8px 12px;
+  border-radius: 7px;
+  margin: 2px 0;
+  font-size: 10px;
+  font-weight: 600;
+}
+
 .my-work .work-text .work-tools ul li {
   background-color: #ebf0ee;
   padding: 10px;
@@ -338,12 +370,29 @@
   margin-top: 20px;
 }
 
+.modal-container-mobile button {
+  padding: 10px;
+  background-color: #36b37e;
+  color: white;
+  border-radius: 3px;
+  width: 47%;
+  cursor: pointer;
+}
+
 .about-me .resume-btn button {
   padding: 15px;
   transition: box-shadow 2s;
   background-color: #36b37e;
   color: white;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-container-mobile .modal-btns a button {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  width: 100%;
 }
 
 .my-work .work-text .project-btn button {
@@ -355,6 +404,7 @@
   color: white;
   padding: 10px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .about-me .resume-btn button:active {
@@ -544,6 +594,7 @@
   width: 98%;
   display: flex;
   justify-content: flex-end;
+  cursor: pointer;
 }
 
 .modal-container-mobile .modal-body {
@@ -553,10 +604,8 @@
   flex-direction: column;
   height: 95%;
   background-color: #fff;
-  /* margin: 1% auto; */
   z-index: 2;
   opacity: 1;
-  margin: auto;
   border-radius: 7px;
   padding: 10px 10px;
 }
@@ -567,14 +616,14 @@
   margin: auto;
 }
 
-.modal-container-mobile .modal-body .modal-img img {
-  width: 100%;
+.modal-container-mobile .modal-btns img {
+  padding-top: 3px;
+  padding-left: 5px;
+  width: 13%;
 }
 
-.modal-container-mobile h2 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
+.modal-container-mobile .modal-body .modal-img img {
+  width: 100%;
 }
 
 .modal-container-mobile .modal-btns {
@@ -583,39 +632,9 @@
   margin: 10px 0;
 }
 
-.modal-container-mobile button {
-  padding: 10px;
-  transition: box-shadow 2s;
-  background-color: #36b37e;
-  color: white;
-  border-radius: 3px;
-  width: 47%;
-}
-
-.modal-container-mobile .technologies ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2px;
-  margin: 0;
-  padding: 0;
-  justify-content: flex-start;
-  list-style-type: none;
-  align-items: center;
-}
-
-.modal-container-mobile .technologies ul li {
-  background-color: #ebecf0;
-  color: #344563;
-  padding: 8px 12px;
-  border-radius: 7px;
-  margin: 2px 0px;
-  font-size: 10px;
-  font-weight: 600;
-}
-
-.modal-container-mobile p {
-  font-size: 16px;
-  font-weight: 400;
+.modal-container-mobile .modal-btns a {
+  text-decoration: none;
+  width: 48%;
 }
 
 @media (max-width: 767px) {
@@ -638,6 +657,7 @@
   .modal-container-mobile {
     display: none !important;
   }
+
   .navigation-bar {
     display: none;
   }
@@ -654,6 +674,17 @@
     padding-bottom: 10rem;
   }
 
+  .technologies ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    list-style-type: none;
+    align-items: center;
+  }
+
   .nav-desktop .navigation-desktop ul {
     position: fixed;
     background-color: white;
@@ -668,6 +699,16 @@
   .nav-desktop .navigation-desktop ul a {
     text-decoration: none;
     color: #172b4d;
+  }
+
+  .technologies ul li {
+    background-color: #ebecf0;
+    color: #344563;
+    padding: 8px 12px;
+    border-radius: 7px;
+    margin: 10px 0;
+    font-size: 10px;
+    font-weight: 600;
   }
 
   .nav-desktop .navigation-desktop ul li {
@@ -693,6 +734,11 @@
     font-weight: 800;
     font-size: 48px;
     line-height: 60px;
+  }
+
+  .heading h2 {
+    font-size: 20px;
+    font-weight: 600;
   }
 
   .nav-desktop .paragraph {
@@ -723,6 +769,10 @@
 
   .footer-desktop img {
     transition: transform 1s;
+  }
+
+  .modal-btns img {
+    width: 10%;
   }
 
   .nav-desktop .bottom .socials img {
@@ -805,7 +855,7 @@
     width: 50%;
     height: auto;
     background-color: #fff;
-    margin: 1% auto;
+    margin: 5% auto;
     z-index: 2;
     opacity: 1;
   }
@@ -822,6 +872,10 @@
     overflow: hidden;
   }
 
+  .heading {
+    width: 50%;
+  }
+
   .modal-title .heading {
     color: #172b4d;
     font-style: normal;
@@ -830,60 +884,40 @@
   }
 
   .modal-btns button {
-    padding: 10px;
+    padding: 7px;
     background-color: #36b37e;
     color: white;
     border-radius: 5px;
+    cursor: pointer;
   }
+
   .modal-tittle {
     display: flex;
     justify-content: space-between;
     width: 95%;
     margin: 5px auto;
   }
-  .heading {
-    width: 50%;
-  }
 
-  .heading h2 {
-    font-size: 20px;
-    font-weight: 600;
-  }
   .technologies,
   .desc {
     width: 95%;
     margin: auto;
   }
-  .technologies ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    margin: 0;
-    padding: 0;
-    justify-content: flex-start;
-    list-style-type: none;
-    align-items: center;
-  }
-  .technologies ul li {
-    background-color: #ebecf0;
-    color: #344563;
-    padding: 8px 12px;
-    border-radius: 7px;
-    margin: 10px 0px;
-    font-size: 10px;
-    font-weight: 600;
-  }
+
   .close-img {
     width: 98%;
     display: flex;
     justify-content: flex-end;
+    cursor: pointer;
   }
+
   .desc {
     font-weight: 400;
     font-size: 14px;
     line-height: 0.5cm;
     margin: 10px auto;
   }
+
   @keyframes rotation {
     from {
       transform: rotate(0deg);
