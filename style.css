@@ -6,7 +6,7 @@
 }
 
 .modal-container {
-  display: none ;
+  display: none;
 }
 
 .navigation-bar {
@@ -70,11 +70,11 @@
 }
 
 .hidden {
-  display: none;
+  display: none ;
 }
 
 .visible {
-  display: block;
+  display: block !important;
   animation: dropdown 1s 1;
 }
 
@@ -525,8 +525,8 @@
 }
 
 .modal-container-mobile {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   align-items: center;
   position: fixed;
   z-index: 100;
@@ -786,7 +786,7 @@
   }
 
   .modal-container {
-    display: block ;
+    display: block;
     position: fixed;
     z-index: 100;
     left: 0;
