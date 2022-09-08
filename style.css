@@ -655,6 +655,7 @@
     max-width: 1440px;
     margin: auto;
   }
+
   .card-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
