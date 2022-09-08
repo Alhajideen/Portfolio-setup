@@ -255,6 +255,7 @@
   height: 45%;
   background-color: white;
   border-radius: 10px;
+  width: 100%;
 }
 
 .about-me header {
@@ -650,6 +651,10 @@
 }
 
 @media (min-width: 1023px) {
+  * {
+    max-width: 1440px;
+    margin: auto;
+  }
   .card-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -726,7 +731,7 @@
     flex-direction: column;
     align-items: center;
     align-content: space-between;
-    width: 60%;
+    width: 75%;
     margin: auto;
     padding-top: 10rem;
     text-align: center;
@@ -775,7 +780,7 @@
   }
 
   .modal-btns img {
-    width: 10%;
+    width: 8%;
   }
 
   .nav-desktop .bottom .socials img {
@@ -887,11 +892,12 @@
   }
 
   .modal-btns button {
-    padding: 7px;
+    padding: 5px;
     background-color: #36b37e;
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 12px;
   }
 
   .modal-tittle {
