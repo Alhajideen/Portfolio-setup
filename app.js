@@ -81,8 +81,7 @@ button.addEventListener('click', (e) => {
     localStorage.removeItem('formValues');
   } else {
     e.preventDefault();
-    message.innerHTML =
-      'Please enter correct email pattern in lowercase letters only';
+    message.innerHTML = 'Please enter correct email pattern in lowercase letters only';
   }
 });
 
