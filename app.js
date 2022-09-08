@@ -78,9 +78,11 @@ button.addEventListener('click', (e) => {
   if (email.match(regEx)) {
     message.innerHTML = '';
     form.submit();
+    localStorage.removeItem('formValues');
   } else {
     e.preventDefault();
-    message.innerHTML = 'Please enter correct email pattern in lowercase letters only';
+    message.innerHTML =
+      'Please enter correct email pattern in lowercase letters only';
   }
 });
 
