@@ -80,9 +80,15 @@ button.addEventListener('click', (e) => {
     form.submit();
   } else {
     e.preventDefault();
-    message.innerHTML = 'Please enter correct email pattern in lowercase letters only';
+    message.innerHTML =
+      'Please enter correct email pattern in lowercase letters only';
   }
 });
+
+const inputs = form.elements;
+const inputArr = [inputs[0], inputs[1], inputs[2]];
+console.log(inputArr);
+
 
 const buttonArr = [hamburger, closeX];
 buttonArr.forEach((e) => {
