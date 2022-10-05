@@ -11,20 +11,20 @@ const message = document.querySelector('.errorMsg');
 const projectArr = [
   {
     id: 1,
-    name: 'Multi-Post Stories Gain+Glory',
+    name: 'To-Do List App',
     description:
-      "1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: './img/card1.png',
-    technologies: ['Codekit', 'Github', 'Javascript', 'Bootstrap'],
-    Source: 'https://github.com/Alhajideen/Portfolio-setup',
-    liveLink: 'https://github.com/Alhajideen/Portfolio-setup',
+      'This is a simple To-Do List App. The app allows one to add a list activities scheduled to be done. This is a way to keep a track of daily/weekly schedules. The activities are arranged in a first in first out(order) and they can be edited, marked as done or deleted.',
+    image: './projects/ToDo.PNG',
+    technologies: ['HTML', 'CSS', 'Javascript', 'Webpack'],
+    Source: 'https://github.com/Alhajideen/To-Do-List',
+    liveLink: 'https://helpful-chimera-037d02.netlify.app',
   },
   {
     id: 2,
     name: 'Multi-Post Stories Gain+Glory',
     description:
       "2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: './img/card1.png',
+    image: './img/cad1.png',
     technologies: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
     Source: 'https://github.com/Alhajideen/Portfolio-setup',
     liveLink: 'https://github.com/Alhajideen/Portfolio-setup',
@@ -34,7 +34,7 @@ const projectArr = [
     name: 'Multi-Post Stories Gain+Glory',
     description:
       "3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: './img/card1.png',
+    image: './img/cad1.png',
     technologies: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
     Source: 'https://github.com/Alhajideen/Portfolio-setup',
     liveLink: 'https://github.com/Alhajideen/Portfolio-setup',
@@ -54,7 +54,7 @@ const projectArr = [
     name: 'Multi-Post Stories Gain+Glory',
     description:
       "5 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: './img/card1.png',
+    image: './img/cad1.png',
     technologies: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
     Source: 'https://github.com/Alhajideen/Portfolio-setup',
     liveLink: 'https://github.com/Alhajideen/Portfolio-setup',
@@ -64,7 +64,7 @@ const projectArr = [
     name: 'Multi-Post Stories Gain+Glory',
     description:
       "6 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: './img/card1.png',
+    image: './img/crd1.png',
     technologies: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
     Source: 'https://github.com/Alhajideen/Portfolio-setup',
     liveLink: 'https://github.com/Alhajideen/Portfolio-setup',
@@ -81,7 +81,8 @@ button.addEventListener('click', (e) => {
     localStorage.removeItem('formValues');
   } else {
     e.preventDefault();
-    message.innerHTML = 'Please enter correct email pattern in lowercase letters only';
+    message.innerHTML =
+      'Please enter correct email pattern in lowercase letters only';
   }
 });
 
@@ -143,7 +144,7 @@ for (let i = 0; i < projectArr.length; i += 1) {
   }
   myCard += `<article class="work-card">
           <figure class="work-img">
-            <img src="${myObj.imae}" alt="work screenshot" />
+            <img src="${myObj.image}" alt="work screenshot" />
           </figure>
           <div class="work-text">
             <header>
@@ -205,8 +206,8 @@ const modalElem = (arr) => `
             <h2>${arr.name}</h2>
           </div>
           <div class="modal-btns">
-            <a href="" target="_blank"><button>See Live <img src="./img/see-live.png" alt=""></i></button></a>
-            <a href="" target="_blank"><button>See Source <img src="./img/gh.png" alt="github"></button></a>
+            <a href="${arr.liveLink}" target="_blank"><button>See Live <img src="./img/see-live.png" alt=""></i></button></a>
+            <a href="${arr.Source}" target="_blank"><button>See Source <img src="./img/gh.png" alt="github"></button></a>
           </div>
         </div>
         <div class="technologies">
